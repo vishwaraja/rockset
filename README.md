@@ -25,7 +25,7 @@ The steps involved to set this up are:
 	  terraform plan
 	  terraform apply
 
-ALso if you have a different default kube config location please make the change in the main.tf file under the kubernetes provider block:
+Also if you have a different default kube config location please make the change to the `config_path` in the main.tf file under the kubernetes provider block:
 
     provider "kubernetes" {
 
@@ -43,3 +43,16 @@ The steps involved to set this up are:
 	  git clone <url link>
 	  cd rockset/nginx
 	  kubectl apply -f nginx.yml
+
+
+To get the load balancer url do:
+
+    kubectl get svc
+
+This should be a sammple output:
+    NAME            TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)        AGE
+    kubernetes      ClusterIP      172.20.0.1       <none>                                                                   443/TCP        130m
+    nginx-service   LoadBalancer   172.20.201.100   a5407941055fe4e9cb6190644660c97a-147978755.us-east-2.elb.amazonaws.com   80:31494/TCP   41m
+
+
+Use the url of the nginx-service to view the status page.
