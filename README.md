@@ -19,9 +19,9 @@ The steps involved to set this up are:
 
 	  git clone <url link>
 	  cd rockset
-	  export AWS_ACCESS_KEY_ID=<>
-	  export AWS_SECRET_ACCESS_KEY=<>
-	  export AWS_DEFAULT_REGION=<>
+	  export AWS_ACCESS_KEY_ID=""
+	  export AWS_SECRET_ACCESS_KEY=""
+	  export AWS_DEFAULT_REGION=""
 	  terraform init
 	  terraform plan
 	  terraform apply
