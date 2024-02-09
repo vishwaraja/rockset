@@ -59,3 +59,8 @@ This should be a sammple output:
 
 
 Use the url of the nginx-service to view the status page.
+
+
+
+
+The config-map section in the nginx.yml file can be tweaked to return any kind of response required when hitting "/" in the url.
