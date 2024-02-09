@@ -8,8 +8,9 @@ The documentation requires the below components to be pre-installed.
 * terraform
 
 The installation steps consists of two folds they are:
-      * EKS cluster and VPC setup (using terraform)
-      * nginx deployment (using kubectl)
+
+      1. EKS cluster and VPC setup (using terraform)
+      2. nginx deployment (using kubectl)
 
 ## 1. EKS cluster and  VPC setup (using terraform)
 
