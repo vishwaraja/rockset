@@ -50,6 +50,8 @@ To get the load balancer url do:
     kubectl get svc
 
 This should be a sammple output:
+
+
     NAME            TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)        AGE
     kubernetes      ClusterIP      172.20.0.1       <none>                                                                   443/TCP        130m
     nginx-service   LoadBalancer   172.20.201.100   a5407941055fe4e9cb6190644660c97a-147978755.us-east-2.elb.amazonaws.com   80:31494/TCP   41m
