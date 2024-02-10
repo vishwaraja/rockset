@@ -19,9 +19,9 @@ The steps involved to set this up are:
 
 	  git clone <url link>
 	  cd rockset
-	  export AWS_ACCESS_KEY_ID=<>
-	  export AWS_SECRET_ACCESS_KEY=<>
-	  export AWS_DEFAULT_REGION=<>
+	  export AWS_ACCESS_KEY_ID=""
+	  export AWS_SECRET_ACCESS_KEY=""
+	  export AWS_DEFAULT_REGION=""
 	  terraform init
 	  terraform plan
 	  terraform apply
@@ -53,14 +53,9 @@ To get the load balancer url do:
 This should be a sammple output:
 
 
-    NAME            TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)        AGE
-    kubernetes      ClusterIP      172.20.0.1       <none>                                                                   443/TCP        130m
-    nginx-service   LoadBalancer   172.20.201.100   a5407941055fe4e9cb6190644660c97a-147978755.us-east-2.elb.amazonaws.com   80:31494/TCP   41m
+NAME           TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)        AGE
+kubernetes     ClusterIP      172.20.0.1      <none>                                                                    443/TCP        22h
+my-nginx-svc   LoadBalancer   172.20.21.169   a212beae4aa364a6e86019578a3174ed-1166342306.us-east-2.elb.amazonaws.com   80:32733/TCP   37m
 
 
 Use the url of the nginx-service to view the status page.
-
-
-
-
-The config-map section in the nginx.yml file can be tweaked to return any kind of response required when hitting "/" in the url.
