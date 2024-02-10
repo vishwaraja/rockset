@@ -53,9 +53,9 @@ To get the load balancer url do:
 This should be a sammple output:
 
 
-NAME           TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)        AGE
-kubernetes     ClusterIP      172.20.0.1      <none>                                                                    443/TCP        22h
-my-nginx-svc   LoadBalancer   172.20.21.169   a212beae4aa364a6e86019578a3174ed-1166342306.us-east-2.elb.amazonaws.com   80:32733/TCP   37m
+	NAME           TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)        AGE
+	kubernetes     ClusterIP      172.20.0.1      <none>                                                                    443/TCP        22h
+	my-nginx-svc   LoadBalancer   172.20.21.169   a212beae4aa364a6e86019578a3174ed-1166342306.us-east-2.elb.amazonaws.com   80:32733/TCP   37m
 
 
 Use the url of the nginx-service to view the status page.
