@@ -1,0 +1,14 @@
+name: Hello World
+
+on:
+  push:  # Trigger the workflow on any push event
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Run the workflow on an Ubuntu runner
+
+    steps:
+      - uses: actions/checkout@v3  # Checkout the code from the repository
+
+      - name: Say Hello  # A simple step to print a message
+        run: echo "Hello World!"
